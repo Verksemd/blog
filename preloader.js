@@ -1,8 +1,9 @@
-$(document).ready(function($) {
+function progressLoading() {
     const Body = $('body');
     Body.addClass('preloader-site');
-});
-$(window).load(function() {
+}
+
+function finishLoading() {
     $('.preloader-wrapper').fadeOut();
     $('body').removeClass('preloader-site');
-});
+}

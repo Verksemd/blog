@@ -1,6 +1,8 @@
+progressLoading();
 fetch("http://temirkhan.nasukhov.me/api/posts")
     .then((resp) => resp.json())
     .then(showPosts)
+    .then(finishLoading);
 
 function showPosts(postsList) {
     let content = '';
